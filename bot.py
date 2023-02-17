@@ -181,5 +181,5 @@ async def on_member_join(member):
         await channel.send(f"Welcome {member.mention} to the server!")
 
 
-bot.run('MTA3NDY1ODIzMTA0NzE2ODA2MA.Gas7y4.8gs9o6NQEAAL6zj5NKtVpTarQgAIxXRgNonsl0')
+bot.run('Message me for the bot token')
 
