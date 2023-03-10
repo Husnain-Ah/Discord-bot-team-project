@@ -1,0 +1,544 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fira sans', sans-serif;
+}
+
+html::-webkit-scrollbar {
+
+    width: 0.8vw;
+    height: 2vw;
+
+}
+
+html::-webkit-scrollbar-thumb {
+    border-radius: 40px;
+    
+    background-color: grey;
+
+
+}
+
+html::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(212, 199, 199);
+
+
+}
+
+html::-webkit-scrollbar-track {
+    background-color: rgb(92, 90, 90);
+    border: .25em;
+    
+
+
+}
+
+html::-webkit-scrollbar-track:hover {
+    background-color: black;
+    
+}
+
+
+
+
+html {
+
+    height: 100%;
+}
+
+
+body {
+    font-family: sans-serif;
+
+
+
+
+
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 0px;
+    padding: 0 20px;
+    color: rgb(130, 234, 12);
+    box-shadow: 0 5px 5px rgba(223, 10, 10, 0.2);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    border-radius: 5px;
+    width: 80%;
+    margin-top: 7.5rem;
+    padding: 0 20px;
+    background-color: #002244;
+    color: rgb(235, 0, 192);
+}
+
+nav .logo img {
+    color: #fff;
+    margin-top: 1.5rem;
+    width: 100px;
+}
+
+.footerimg {
+    width: 100px;
+
+}
+
+header h1 {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+
+
+.landing-page {
+    height: 140vh;
+    width: 100%;
+    background-color: #13274F;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.landing-text h1 {
+    color: #fff;
+    font-size: 12rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+
+}
+
+.landing-text p {
+    color: white;
+    font-weight: 300;
+    font-size: 1.7rem;
+    white-space: pre-line;
+    margin: 1rem;
+    opacity: .4;
+   
+    font-family: system-ui;
+}
+
+.about h4 {
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 2rem;
+    /* margin-top: 2rem; */
+}
+
+.logbutton {
+    border: none;
+    outline: none;
+    background-color: #5ce783;
+    padding: 0px 25px;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: 900;
+    color: #fff;
+    border-radius: 5px;
+    transition: all ease 0.1s;
+    box-shadow: 0px 5px 0px 0px #a29bfe;
+}
+
+.logbutton:active {
+    transform: translateY(5px);
+    box-shadow: 0px 0px 0px 0px #a29bfe;
+}
+
+button {
+    border: 30;
+    width: 140px;
+    height: 50px;
+    color: #fff;
+    z-index: 1;
+    margin-bottom: 18rem;
+    /* justify-content: center;
+    display: absolute; */
+    background: #000;
+    /* position: relative; */
+}
+
+
+
+
+
+footer {
+    color: #fff;
+    background-color: #002244;
+    padding: 0 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+footer .social-links {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+footer .social-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    margin-right: 20px;
+    transition: color 0.3s ease;
+}
+
+footer .social-links a:hover {
+    color: #0088cc
+}
+
+.hamburger {
+    display: block;
+    position: relative;
+    z-index: 1;
+
+    user-select: none;
+
+    appearance: none;
+    outline: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.hamburger span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+
+
+    background-color: #a29bfe;
+    border-radius: 6px;
+    z-index: 1;
+
+    transform-origin: 0 0;
+
+    transition: 0.4s;
+}
+
+.hamburger:hover span:nth-child(2) {
+    transform: translateX(10px);
+    background-color: blue;
+}
+
+.hamburger.is-active span:nth-child(1) {
+    transform: translateY(6px);
+}
+
+.hamburger.is-active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.is-active span:nth-child(3) {
+    transform: translateX(-6px);
+}
+
+.hamburger.is-active:hover span {
+    background-color: white;
+}
+
+/* styling the ivinte button     */
+
+
+button {
+    transform: rotate(-25deg) skew(25deg);
+    transform-style: preserve-3d;
+    position: relative;
+    margin-top: 3rem;
+    list-style: none;
+    width: 100px;
+    height: 32px;
+    border: none;
+    background: transparent;
+    font-family: inherit;
+}
+
+button:before {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: -5px;
+    width: 100%;
+    height: 10px;
+    background: #040fe9;
+    transform: skewX(-41deg);
+}
+
+button:after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: -9px;
+    width: 9px;
+    height: 100%;
+    background: #040fe9;
+    transform: skewY(-49deg);
+}
+
+button span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #010311;
+    color: #fff;
+    font-size: 25px;
+    transition: 1.1s ease-out;
+}
+
+button:hover span {
+    z-index: 1000;
+    transition: .3s;
+    color: #fff;
+}
+
+button:hover span:nth-child(5) {
+    transform: translate(40px, -40px);
+    opacity: 1;
+}
+
+button:hover span:nth-child(4) {
+    transform: translate(30px, -30px);
+    opacity: .8;
+}
+
+button:hover span:nth-child(3) {
+    transform: translate(20px, -20px);
+    opacity: .6;
+}
+
+button:hover span:nth-child(2) {
+    transform: translate(10px, -10px);
+    opacity: .4;
+}
+
+button:hover span:nth-child(1) {
+    transform: translate(0px, 0px);
+    opacity: .2;
+}
+
+button:active span:nth-child(5) {
+    transform: translate(20px, -20px);
+    opacity: 1;
+}
+
+button:active span:nth-child(4) {
+    transform: translate(15px, -15px);
+}
+
+button:active span:nth-child(3) {
+    transform: translate(10px, -10px);
+}
+
+button:active span:nth-child(2) {
+    transform: translate(5px, -5px);
+}
+
+button:active span:nth-child(1) {
+    transform: translate(0px, 0px);
+}
+
+button:nth-child(1):hover span {
+    background: #52E19F;
+}
+
+/*end of style the button */
+
+.menu {
+    display: none;
+    gap: 10px;
+
+
+
+
+}
+
+.menu.is-open {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    /* background-color: rgb(2, 57, 56); */
+    color: rgb(235, 0, 192);
+
+}
+
+.menu a {
+    display: block;
+    color: white;
+    font-weight: 600;
+    padding: 2px;
+    text-decoration: none;
+
+
+}
+
+.menu a:hover {
+    color: #a29bfe;
+}
+
+
+
+
+@media screen and (min-width: 1100px) {
+    .hamburger {
+        display: none;
+        font-size: 10px;
+    }
+
+    .menu {
+        display: flex;
+
+    }
+
+
+
+
+}
+
+
+@media(max-width: 1000px) {
+    footer {
+        text-align: center;
+        font-size: 12px;
+
+
+    }
+
+    footer .social-links {
+        margin-top: 15px;
+        margin-left: -10px;
+        display: inline-flex;
+    }
+
+    footer .social-links a {
+        margin: 0 5px;
+        display: block;
+        font-size: 20px;
+       
+    }
+
+    nav {
+        width: 100%;
+        margin-bottom: 2.3rem;
+
+    }
+
+    .logbutton {
+        font-size: 12px;
+        font-weight: 200px;
+    }
+
+    .menu.is-open {
+        font-size: 10px;
+        font-weight: 400;
+        gap: 3px;
+        /* background-color: red; */
+    }
+
+    button span {
+        font-size: 25px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .landing-page{
+        height: 200vh;
+    }
+    .landing-text h1 {
+
+        font-size: 10rem;
+
+    }
+
+    .landing-text p {
+        font-size: 1.5rem;
+        opacity: .5;
+        display: flex;
+    }
+
+
+}
+
+
+
+@media (max-width: 400px) {
+    .landing-text h1 {
+        font-size: 7rem;
+
+    }
+
+    .landing-text p {
+        font-size: 0.9rem;
+        opacity: .5;
+        display: flex;
+    }
+
+    .hamburger span {
+        width: 30px;
+    }
+
+
+
+}
+
+
+.features {
+    display: grid;
+    margin: 10px 100px;
+    border-radius: 10px;
+    
+    align-items: center;
+
+    margin-top: 2rem;
+    padding: 0 20px;
+    grid-template-columns: repeat(2, 2fr);
+    background-color: #002244;
+    grid-gap: 1rem;
+    box-shadow: 0 5px 50px rgba(8, 244, 16, 0.2);
+
+}
+
+.feature {
+    padding: 1rem;
+    color: white;
+    font-size: 15px;
+}
+
+@media screen and (max-width: 1000px) {
+    .features {
+        font-size: 1px;
+        width: 90%;
+        margin-bottom: 20rem;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        
+
+    }
+    .feature{
+        font-size: 15px;
+    }
+   
+
+}
