@@ -134,6 +134,13 @@ header h1 {
     font-size: 2rem;
     /* margin-top: 2rem; */
 }
+.about p {
+    color: white;
+    /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+    font-size: 1rem;
+    /* margin-top: 2rem; */
+}
+
 
 .logbutton {
     border: none;
@@ -538,7 +545,41 @@ button:nth-child(1):hover span {
     }
     .feature{
         font-size: 15px;
+        text-align: center;
     }
    
 
+}
+
+@media screen and (max-width: 765px) {
+    
+    .features {
+        font-size: 1px;
+        width: 80%;
+        margin-bottom: 18rem;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        
+
+    }
+    .feature{
+        font-size: 12px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .features {
+        font-size: 1px;
+        width: 70%;
+        margin-bottom: 16rem;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        
+
+    }
+    .feature{
+        font-size: 10px;
+        text-align: center;
+    }
 }
